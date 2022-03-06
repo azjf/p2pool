@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(p2pool)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_BUILD_TYPE Debug)
+
 option(STATIC_BINARY "Build static binary" OFF)
 option(WITH_RANDOMX "Include the RandomX library in the build. If this is turned off, p2pool will rely on monerod for verifying RandomX hashes" ON)
 
